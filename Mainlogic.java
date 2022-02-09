@@ -3,17 +3,17 @@
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration; 
 
-public class Mainlogic {
+public class Mainlogic { 
 
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		Configuration cf = new Configuration();
-		cf.configure("hibernate.xml");
-		SessionFactory sf = cf.buildSessionFactory();
+        StandardServiceRegistry ssr= new StandardServiceRegistryBuilder().configure("hibernet.xml")
+        Metadata me = new MetadataSources(ssr).getMetadataBuilder().build()        		
 		Session se = sf.openSession();
 		Transaction tx = se.beginTransaction();
 		student mastan = new student();
