@@ -22,9 +22,9 @@ public class Mainlogic {
 		Session se = sf.openSession();
 		Transaction tx = se.beginTransaction();
 		student mastan= new student();
-		mastan.setSid(1206);
-		mastan.setSname("surya");
-		mastan.setSmarks(700);
+		mastan.setSid(6666);
+		mastan.setSname("sai krishna");
+		mastan.setSmarks(7777);
 		
 		se.save(mastan);
 		
