@@ -10,6 +10,6 @@
 <property name="show_sql">true</property>
 <property name="dialet">org.hibernate.dialect.MySQLDialect</property>
 <property name="hbm2ddl.auto">update</property>
-<mapping resource="student.xml"/>
+<mapping class ="com.mondee.student"/>
 </session-factory>
 </hibernate-configuration>
