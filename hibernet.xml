@@ -9,7 +9,7 @@
 <property name="connection.password">Mastan@123</property>
 <property name="show_sql">true</property>
 <property name="dialet">org.hibernate.dialect.MySQLDialect</property>
-<property name="hbm2ddl.auto">create</property>
+<property name="hbm2ddl.auto">update</property>
 <mapping resource="student.xml"/>
 </session-factory>
 </hibernate-configuration>
