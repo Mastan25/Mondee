@@ -6,14 +6,14 @@
 <id name="paymentId" column="PaymentId"></id>
 <property name ="amount" column="amount"></property>
 
-<union-subclass name="com.mondee.CreditCard" table="CreditCard" >
-
+<joined-subclass name="com.mondee.CreditCard" table="CreditCard" >
+<key column="pcid"></key>
 <property name ="CreditCardType" column="CreditCardType"></property>
-</union-subclass>
+</joined-subclass>
 
-<union-subclass name="com.mondee.Cheque" table="Cheque" >
-
+<joined-subclass name="com.mondee.Cheque" table="Cheque" >
+<key column="pcqid"></key>
 <property name ="ChequeType" column="ChequeType"></property>
-</union-subclass>
+</joined-subclass>
 </class>
 </hibernate-mapping>

@@ -16,13 +16,13 @@ public static void main(String[] args) {
 		Session se = sf.openSession();
 		Transaction tx = se.beginTransaction();
 		CreditCard cc=new CreditCard();
-		cc.setPaymentId(388);
-		cc.setAmount(9988);
+		cc.setPaymentId(380);
+		cc.setAmount(1000);
 		cc.setCreditCardType("VISA");
 		
 		Cheque cq=new Cheque();
-		cq.setPaymentId(80);
-		cq.setAmount(8870);
+		cq.setPaymentId(868);
+		cq.setAmount(70000);
 		cq.setChequeType("ICICI");
 		 se.save(cc);
 		 se.save(cq);
